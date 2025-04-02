@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <ul>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><button id="theme-toggle">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="intro">
+        <div class="intro-text">
+            <h1 id="typing-effect">Olá a todos, eu sou  <span class="wave">👋</span></h1>
+            <h2>Desenvolvedor Back-End</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum rem eos reiciendis quasi quo debitis voluptas fugiat libero mollitia repellendus incidunt magni reprehenderit laboriosam et laudantium, accusantium, aliquid ea sint?</p>
+        </div>
+        <div class="intro-image">
+            <img src="imagens/R.png" alt="Ilustração de desenvolvedor">
+        </div>
+    </div>
+    
+    <section id="about"> 
+        <h3>O que eu faço</h3>
+        <h4>LORD SITH QUE DESEJA ACABAR COM A ORDEM JEDI, REVIVER MINHA PADMÉ e DOMINAR A GALÁXIA</h4>
+        <div class="skills">
+            <img src="icons/skills/html5-plain-wordmark.svg" alt="HTML5" class="skill-icon">
+            <img src="icons/skills/css3-plain-wordmark.svg" alt="CSS3" class="skill-icon">
+            <img src="icons/skills/javascript-plain.svg" alt="JavaScript" class="skill-icon"> 
+            <img src="icons/skills/java-original-wordmark.svg" alt="Java" class="skill-icon">
+            <img src="icons/skills/spring-original-wordmark.svg" alt="SpringBoot" class="skill-icon">
+            <img src="icons/skills/mysql-original-wordmark.svg" alt="MySQL" class="skill-icon">
+            <img src="icons/skills/react-original-wordmark.svg" alt="React" class="skill-icon">
+            <img src="icons/skills/nodejs-line-wordmark.svg" alt="Node" class="skill-icon">
+        </div>
+        <div class="skills2">
+            <img src="icons/skills/git-original-wordmark.svg" alt="Git" class="skill-icon">
+            <img src="icons/skills/github-original-wordmark.svg" alt="GitHub" class="skill-icon">
+            <img src="icons/skills/python-original-wordmark.svg" alt="Python" class="skill-icon">
+            <img src="icons/skills/pandas-original-wordmark.svg" alt="Pandas" class="skill-icon">
+            <img src="icons/skills/mongodb-original-wordmark.svg" alt="MongoDB" class="skill-icon"> 
+        </div>
+        <p>Breve descrição sobre você e seu interesse na área de desenvolvimento.</p>
+        <a href="curriculo.pdf" download class="btn-download">BAIXAR MEU CURRÍCULO</a>
+    </section>
+    
+    <section id="projects">
+        <h3>Projetos de código aberto</h3>
+        <div class="projects-container">
+            <a href="https://github.com/seuusuario/projeto1" class="project-link" target="_blank">Projeto 1</a>
+            <a href="https://github.com/seuusuario/projeto2" class="project-link" target="_blank">Projeto 2</a>
+            <a href="https://github.com/seuusuario/projeto3" class="project-link" target="_blank">Projeto 3</a>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h3>Entre em contato comigo!</h3>
+        <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus molestiae nam soluta harum voluptatum molestias</h2>
+        <div class="social-links">
+            <a href="https://github.com/seuusuario" target="_blank"><img src="icons/github-original.svg" alt="GitHub" class= "github-light">
+                <img src="icons/github-mark/github-mark-white.png" alt="Github" class= "github-dark">
+            </a>
+            <a href="https://linkedin.com/in/seuusuario" target="_blank"><img src="icons/linkedin-original.svg" alt="LinkedIn"></a>
+            <a href="https://wa.me/seunumerowhatsapp" target="_blank"><img src="icons/whatsapp.svg" alt="WhatsApp"></a>
+        </div>
+    </section>
+    <form action="https://formsubmit.co/seuemail@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Nome" required>
+        
+        <input type="email" name="email" placeholder="E-mail" required>
+        
+        <input type="text"  name="subject" placeholder="Assunto" required>
+        
+        <textarea  name="message" rows="5" placeholder="Mensagem" required></textarea>
+        
+        <button type="submit">Enviar</button>
+    </form>
+
+    <footer>
+        <p>&copy; 2025 Anakin Skywalker | <a href="#about">Sobre</a> | <a href="#projects">Projetos</a> | <a href="#contact">Contato</a></p>
+    </footer>
+</body>
+</html>
