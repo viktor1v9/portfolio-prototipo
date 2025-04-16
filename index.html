@@ -3,91 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js" defer></script>
+    <title>Victo Reis</title>
+
+    <!--FONT-AWESOME-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="css/styles.css"> 
+
+     <script src="https://unpkg.com/scrollreveal"></script>
+
+     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+     <script src="js/script.js" defer></script> 
+
 </head>
 <body>
-    <header>
-        <nav class="top-nav">
-            <ul>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
-                <li><button id="theme-toggle">🌙</button></li>
-            </ul>
+    <header class = "header">
+        <a href="#" class="logo">Victo Reis</a>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav class = "top-nav">
+            <a href="#home" class="active">Início</a>
+            <a href="#about">Sobre</a>
+            <a href="#services">Serviços</a>
+            <a href="#portfolio">Projetos</a>
+            <a href="#contact">Contato</a>
         </nav>
     </header>
-    
-    <div class="intro">
-        <div class="intro-text">
-            <h1 id="typing-effect">Olá a todos, eu sou  <span class="wave">👋</span></h1>
-            <h2>Desenvolvedor Back-End</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum rem eos reiciendis quasi quo debitis voluptas fugiat libero mollitia repellendus incidunt magni reprehenderit laboriosam et laudantium, accusantium, aliquid ea sint?</p>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Olá, me chamo</h3>
+            <h4>Anakin Skywalker</h1>
+            <h5>E eu sou <span class="multiple-text"></span></h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio tempore veniam illum cupiditate et 
+               delectus, adipisci vero repellat accusantium velit, rem quas tempora corrupti possimus doloribus quo quis 
+               soluta voluptates?
+            </p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-discord"></i></a>
+            </div>
+            <a href="#" class="btn-download">Download Currículo</a>
         </div>
-        <div class="intro-image">
-            <img src="imagens/R.png" alt="Ilustração de desenvolvedor">
+
+        <div class="home-img">
+            <img src="imagens/R.png" alt="perfil">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="imagens/bb2efb0ee8df.png" alt="imagem">
+        </div>
+        
+        <div class="about-content">
+            <h2 class="heading">SOBRE <span>MIM</span></h2>
+            <h3>Mestre Jedi</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsam nihil repudiandae optio! Vero ut, non 
+                aut sequi adipisci necessitatibus eius deserunt laboriosam! Rerum dolores, maxime ut quam laboriosam consequatur?
+            </p>
+            <a href="#" class="btn-download"> Leia mais</a>
+            
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class=" heading-services">Meus <span>serviços</span></h2>
+    <div class="services-container">       
+        <div class="services-box">
+            <i class="fa-solid fa-code"></i>
+            <h3>Web Development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae dolorum laudantium voluptatem mollitia neque 
+               temporibus, doloribus vitae natus facere rerum ad maxime minus quidem atque saepe, iste aliquam explicabo quasi.</p>
+            <a href="#" class="btn-download">Leia Mais</a>   
+        </div>
+
+        <div class="services-box">
+            <i class="fa-solid fa-palette"></i>
+            <h3>DataBase</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae dolorum laudantium voluptatem mollitia neque 
+               temporibus, doloribus vitae natus facere rerum ad maxime minus quidem atque saepe, iste aliquam explicabo quasi.</p>
+            <a href="#" class="btn-download">Leia Mais</a>   
+        </div>
+
+        <div class="services-box">
+            <i class="fa-brands fa-android"></i>
+            <h3>Back-End Development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae dolorum laudantium voluptatem mollitia neque 
+               temporibus, doloribus vitae natus facere rerum ad maxime minus quidem atque saepe, iste aliquam explicabo quasi.</p>
+            <a href="#" class="btn-download">Leia Mais</a>   
         </div>
     </div>
-    
-    <section id="about"> 
-        <h3>O que eu faço</h3>
-        <h4>LORD SITH QUE DESEJA ACABAR COM A ORDEM JEDI, REVIVER MINHA PADMÉ e DOMINAR A GALÁXIA</h4>
-        <div class="skills">
-            <img src="icons/skills/html5-plain-wordmark.svg" alt="HTML5" class="skill-icon">
-            <img src="icons/skills/css3-plain-wordmark.svg" alt="CSS3" class="skill-icon">
-            <img src="icons/skills/javascript-plain.svg" alt="JavaScript" class="skill-icon"> 
-            <img src="icons/skills/java-original-wordmark.svg" alt="Java" class="skill-icon">
-            <img src="icons/skills/spring-original-wordmark.svg" alt="SpringBoot" class="skill-icon">
-            <img src="icons/skills/mysql-original-wordmark.svg" alt="MySQL" class="skill-icon">
-            <img src="icons/skills/react-original-wordmark.svg" alt="React" class="skill-icon">
-            <img src="icons/skills/nodejs-line-wordmark.svg" alt="Node" class="skill-icon">
-        </div>
-        <div class="skills2">
-            <img src="icons/skills/git-original-wordmark.svg" alt="Git" class="skill-icon">
-            <img src="icons/skills/github-original-wordmark.svg" alt="GitHub" class="skill-icon">
-            <img src="icons/skills/python-original-wordmark.svg" alt="Python" class="skill-icon">
-            <img src="icons/skills/pandas-original-wordmark.svg" alt="Pandas" class="skill-icon">
-            <img src="icons/skills/mongodb-original-wordmark.svg" alt="MongoDB" class="skill-icon"> 
-        </div>
-        <p>Breve descrição sobre você e seu interesse na área de desenvolvimento.</p>
-        <a href="curriculo.pdf" download class="btn-download">BAIXAR MEU CURRÍCULO</a>
     </section>
-    
-    <section id="projects">
-        <h3>Projetos de código aberto</h3>
-        <div class="projects-container">
-            <a href="https://github.com/seuusuario/projeto1" class="project-link" target="_blank">Projeto 1</a>
-            <a href="https://github.com/seuusuario/projeto2" class="project-link" target="_blank">Projeto 2</a>
-            <a href="https://github.com/seuusuario/projeto3" class="project-link" target="_blank">Projeto 3</a>
-        </div>
-    </section>
-    
-    <section id="contact">
-        <h3>Entre em contato comigo!</h3>
-        <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus molestiae nam soluta harum voluptatum molestias</h2>
-        <div class="social-links">
-            <a href="https://github.com/seuusuario" target="_blank"><img src="icons/github-original.svg" alt="GitHub" class= "github-light">
-                <img src="icons/github-mark/github-mark-white.png" alt="Github" class= "github-dark">
-            </a>
-            <a href="https://linkedin.com/in/seuusuario" target="_blank"><img src="icons/linkedin-original.svg" alt="LinkedIn"></a>
-            <a href="https://wa.me/seunumerowhatsapp" target="_blank"><img src="icons/whatsapp.svg" alt="WhatsApp"></a>
-        </div>
-    </section>
-    <form action="https://formsubmit.co/seuemail@gmail.com" method="POST">
-        <input type="text" name="name" placeholder="Nome" required>
-        
-        <input type="email" name="email" placeholder="E-mail" required>
-        
-        <input type="text"  name="subject" placeholder="Assunto" required>
-        
-        <textarea  name="message" rows="5" placeholder="Mensagem" required></textarea>
-        
-        <button type="submit">Enviar</button>
-    </form>
 
-    <footer>
-        <p>&copy; 2025 Anakin Skywalker | <a href="#about">Sobre</a> | <a href="#projects">Projetos</a> | <a href="#contact">Contato</a></p>
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">
+            Ultimos <span>projetos</span>
+        </h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="imagens/1.jpg" alt="projeto">
+                <div class="portfolio-layer">
+                    <h3>Web design</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="imagens/2.jpg" alt="projeto">
+                <div class="portfolio-layer">
+                    <h3>Web design</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="imagens/3.jpg" alt="projeto">
+                <div class="portfolio-layer">
+                    <h3>Web design</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="imagens/4.jpg" alt="bagreyusi">
+                <div class="portfolio-layer">
+                    <h3>Web design</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="imagens/5.jpg" alt="projeto">
+                <div class="portfolio-layer">
+                    <h3>Web design</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="imagens/6.jpg" alt="projeto">
+                <div class="portfolio-layer">
+                    <h3>Web design</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">
+            Entre em contato <span>comigo</span>
+        </h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Nome completo">
+                <input type="email" placeholder="endereço de email">
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Número de celular">
+                <input type="text" placeholder="Assunto">
+            </div>
+            <textarea name="" id="" cols="" rows="10" placeholder="Sua mensagem"></textarea>
+            <input type="submit" value="enviar mensagem" class="btn-download">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>
+                Copyright &copy; 2025 por Victo Reis
+            </p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-angles-up"></i></a>
+        </div>
     </footer>
 </body>
 </html>
