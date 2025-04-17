@@ -20,13 +20,6 @@
         themeToggle.textContent = document.body.classList.contains("light-mode") ? "🌞" : "🌙";
     });
     
-    let menuIcon = document.querySelector('#menu-icon');
-    let topnav = document.querySelector('.top-nav');
-    
-    menuIcon.onclick = () => {
-        menuIcon.classList.toggle('fa-xmark');
-        topnav.classList.toggle('active')
-    }
     
     // Rolagem suave
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -34,12 +27,19 @@
             event.preventDefault();
             document.querySelector(this.getAttribute("href")).scrollIntoView({
                 behavior: "smooth"
-            });
-        });
-        });
-        });*/
+                });
+                });
+                });
+                });*/
 
 
+let menuIcon = document.querySelector('#menu-icon');
+let topnav = document.querySelector('.top-nav');
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('fa-xmark');
+    topnav.classList.toggle('active');
+}
 
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
@@ -47,7 +47,7 @@ let navLinks = document.querySelectorAll('header nav a');
 window.onscroll = () => {
     sections.forEach(e => {
         let top = window.scrollY;
-        let offset = e.offsetTop - 100; // opcional: para ativar um pouco antes
+        let offset = e.offsetTop - 100; 
         let height = e.offsetHeight;
         let id = e.getAttribute('id');
 
@@ -58,14 +58,14 @@ window.onscroll = () => {
             });
         }
     });
-    
-    
+
+
     let header = document.querySelector('header');
     header.classList.toggle('sticky', window.scrollY > 100);
-    
+
     menuIcon.classList.remove('fa-xmark');
     topnav.classList.remove('active');
-    
+
 };
 
 
@@ -76,7 +76,7 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content, heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .services-container, portfolio-box, .contact form ', { origin: 'buttom' });
+ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form ', { origin: 'bottom' });
 ScrollReveal().reveal('.home-contact h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-contact p, .about-content', { origin: 'right' });
 
@@ -88,6 +88,42 @@ const typed = new Typed('.multiple-text', {
     loop: true
 });
 
+const toggle = document.getElementById('theme-toggle');
+const body = document.body
+
+if(localStorage.getItem('theme') === 'light'){
+    body.classList.add('light-mode');
+    toggle.checked = true;
+}
+
+toggle.addEventListener('change', () => {
+    if(toggle.checked) {
+        body.classList.add('light-mode');
+        localStorage.setItem('theme', 'light');
+    }else{
+        body.classList.remove('light-mode');
+        localStorage.setItem('theme', 'dark');
+    }
+})
+
+const scrollBtn = document.getElementById('scrollToTopBtn');
+
+  // Mostrar/esconder botão conforme rolagem
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      scrollBtn.style.display = 'flex';
+    } else {
+      scrollBtn.style.display = 'none';
+    }
+  });
+
+  // Scroll suave até o topo
+  scrollBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
 
 /* 
 window.onscroll = () => {
