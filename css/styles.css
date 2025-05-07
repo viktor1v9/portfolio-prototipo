@@ -199,7 +199,7 @@ span {
 }
 
 .home-content p {
-    font-size: 1.6rem;
+    font-size: 2.6rem;
 }
 
 .social-links a {
@@ -275,11 +275,22 @@ span {
 
 .about-content h3 {
     font-size: 2.6rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
 }
 
 .about-content p {
-    font-size: 1.6rem;
-    margin: 2rem 0 3rem;
+    font-size: 1.8rem;
+    line-height: 24.4px;
+    margin: 1.2rem 0 1.2rem;
+    text-indent: 2em;
+ /* margin-bottom: 1.2rem;
+    margin-top: 1.2rem; */
+    text-align: justify;
+}
+
+#btn-about {
+    margin-top: 3rem;
 }
 
 .services h2 {
@@ -296,6 +307,11 @@ span {
 
 .services-container .services-box {
     flex: 1 1 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 420px;
+    width: 300px;
     background-color: var(--snd-bf-color);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
@@ -320,9 +336,16 @@ span {
 }
 
 .services-box p {
+    flex: 1;
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
+    line-height: 22.4px;
 }
+
+
+.services-box .btn-download {
+    align-self: center;
+  }
 
 .portfolio {
     background: var(--snd-bf-color);

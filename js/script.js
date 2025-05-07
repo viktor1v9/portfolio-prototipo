@@ -81,7 +81,7 @@ ScrollReveal().reveal('.home-contact h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-contact p, .about-content', { origin: 'right' });
 
 const typed = new Typed('.multiple-text', {
-    strings: ['Mestre Jedi', 'Lord Sith', 'Pai de menina'],
+    strings: ['Desenvolvedor Back-End', 'Estudante', 'Nerd por vocação'],
     typeSpeed: 70,
     backSpeed: 70,
     backDelay: 1000,
