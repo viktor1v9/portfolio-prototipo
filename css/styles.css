@@ -342,6 +342,21 @@ span {
     line-height: 22.4px;
 }
 
+.more-text {
+    display: none;
+}
+
+.services-box span {
+    color: var(--text-color);
+}
+
+.services-box.expanded .more-text {
+    display: inline;
+}
+
+.services-box.expanded {
+  height: 500px;
+}
 
 .services-box .btn-download {
     align-self: center;
@@ -620,6 +635,11 @@ span {
         width: 80vw;
         margin-top: 4rem;
     }
+
+        .services-container .services-box {
+    height: 380px;  
+}
+
 }
 
 @media (max-width: 450px) {
@@ -630,4 +650,5 @@ span {
     .contact form .input-box input {
         width: 100%;
     }
+
 }

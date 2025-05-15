@@ -125,6 +125,20 @@ const scrollBtn = document.getElementById('scrollToTopBtn');
     });
   });
 
+// Esconder e mostrar texto
+const toggleButtons = document.querySelectorAll(".toggle-btn");
+
+toggleButtons.forEach((btn)=> {
+    btn.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const box = btn.closest(".services-box");
+        box.classList.toggle("expanded");
+
+        btn.textContent = box.classList.contains("expanded") ? "Mostrar menos" : "Leia mais";
+    });
+});
+
 /* 
 window.onscroll = () => {
     sections.forEach(e => {
