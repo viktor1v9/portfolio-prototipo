@@ -651,4 +651,12 @@ span {
         width: 100%;
     }
 
+    .portfolio-container .portfolio-box {
+        width: 70vw;
+        margin: 4rem auto 0 auto;
+    }
+
+    .portfolio-container .portfolio-box img {
+        width: 100%;
+    }
 }
